@@ -40,6 +40,11 @@ const config = {
         loaders: ['babel-loader'], //react-hot is like browser sync and babel loads jsx and es6-7
         exclude: [nodeModulesPath],
       },
+      {
+        test: /\.css/,
+        loaders: ['style', 'css'],
+        exclude: [nodeModulesPath],
+      },
     ],
   },
   //Eslint config
