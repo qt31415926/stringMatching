@@ -53,7 +53,6 @@ class StringMatchingPage extends Component{
 
   render(){
     const {pattern, text, prime, numPrimes} = this.state;
-    const hashValue1 = calculateHash(pattern, prime);
     const hashValue2 = calculateHash(text, prime); 
 
     const primeValidation = this.validateNumPrimes();
@@ -66,8 +65,6 @@ class StringMatchingPage extends Component{
     return(
       <div className="page-container">
         <h1>String Matching</h1>
-        <p>
-        </p>
           <TextField 
             value={pattern} 
             onChange={ event => this.onInputChange('pattern', event.target.value)} 
@@ -81,17 +78,15 @@ class StringMatchingPage extends Component{
             hintText="Input text to search here" multiLine={true} 
             fullWidth={true}
             />
-          <RaisedButton onMouseDown={this.samplePrime} label="Sample a prime" />
+          <RaisedButton className="primeButton" onMouseDown={this.samplePrime} label="Sample a prime out of the first" /> 
           <TextField 
             value={numPrimes} 
+            className="primeInput"
             onChange={ event => this.onInputChange('numPrimes', event.target.value)} 
             type="number" 
             hintText="e.g. 277" 
             errorText={errorText}
-            />
-          <p> 1st nth primes: {numPrimes} </p>
-          <p> Prime used to hash: {prime} </p>
-          <p> Hash value of pattern: {hashValue1} </p>
+            /> primes
           <RabinKarpAnimation prime={prime} text={text} pattern={pattern}/> 
       </div>
     );

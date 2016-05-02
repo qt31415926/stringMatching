@@ -14,3 +14,41 @@ body {
 .page-container {
   padding-left: 20px;
 }
+
+.letterBlock{
+  float: left;
+  cursor: pointer;
+  margin-right: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.letterButton{
+  min-width: 28px !important;
+  width: 28px !important;
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+.column-container {
+  display: table
+}
+
+.left {
+  display: table-cell;
+  width: 250px;
+}
+
+.right {
+  display: table-cell;
+}
+
+.primeButton {
+  margin-right: 10px ;
+}
+.primeInput {
+  width: 70px !important;
+}
+
+.lettersZone {
+  margin-top: 10px;
+}

@@ -1,7 +1,7 @@
 import _ from 'lodash';
 "use strict";
 
-const alphabetSize = 65535;
+const alphabetSize = 66536;
 
 export function stringMatch(pattern, text, prime){
   const M = pattern.length;

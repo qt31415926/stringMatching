@@ -38,14 +38,8 @@ class Main extends Component {
         <div className="container">
           <Paper>
             <Tabs>
-              <Tab label="String Equality">
-                <StringEqualityPage />
-              </Tab>
               <Tab label="String Matching">
                 <StringMatchingPage />
-              </Tab>
-              <Tab label="Proof">
-                <ProofPage />
               </Tab>
             </Tabs>
           </Paper>
